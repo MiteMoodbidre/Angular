@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import {User} from "../../Models/User";
 
 @Component({
  selector: 'app-user',
@@ -9,17 +10,19 @@ import { Component } from "@angular/core";
 export class UserComponent{
 
     //propertis
-    firstName:string='Venkatesh';
-    lastname:string='Kamath';
-    age:number=21;
+    user:User
 
-    //method
     constructor(){
-        this.sayhello()
+        this.user={
+            firstname:"Pranav",
+            lastname:"Joshi",
+            age:21
+        }
     }
-
-    sayhello(){
-        console.log(`Hello ${this.firstName}`)
-    }
-    
 }
+
+    
+   
+    //method
+   
+    
